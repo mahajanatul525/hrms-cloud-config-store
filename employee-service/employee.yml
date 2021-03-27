@@ -10,15 +10,16 @@ spring:
       ddl-auto: update
     properties:
       hibernate:
-        dialect: ${SPRING_JPA_DATABASE-PLATFORM}
+        dialect: org.hibernate.dialect.MySQL8Dialect
         globally_quoted_identifiers: true
 
   datasource:
-    url: ${SPRING_DATASOURCE_URL}
-    username: ${SPRING_DATASOURCE_USERNAME}
-    password: ${SPRING_DATASOURCE_PASSWORD}
+    url: jdbc:mysql://localhost:3306/hrms?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false
+    username: root
+    password: Matul_525
     initialization-mode: always
-    platform: ${SPRING_DATASOURCE_PLATFORM}
+    driver-class-name: com.mysql.jdbc.Driver
+    platform: org.hibernate.dialect.MySQL8Dialect
     
   
 
