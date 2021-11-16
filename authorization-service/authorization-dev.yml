@@ -4,8 +4,8 @@ spring:
   datasource:
     url: jdbc:mysql://db-dev-v1-doc.coqvpa6wm9ky.ap-south-1.rds.amazonaws.com:3306/db-dev-v1-doc?createDatabaseIfNotExist=true
     username: admin
-    password: admin@123
-    driver-class-name: com.mysql.jdbc.Driver
+    password: Matul_525
+    driver-class-name: com.mysql.cj.jdbc.Driver
     initialization-mode: always
   jpa:
     hibernate:
