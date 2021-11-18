@@ -8,15 +8,17 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     initialization-mode: always
   jpa:
+    generate-ddl: true
+    show-sql: false
+
     hibernate:
-      dialect: org.hibernate.dialect.MySQL8Dialect
-      globally_quoted_identifiers: true
-      naming:
-        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+      ddl-auto: update
     properties:
       hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        globally_quoted_identifiers: true
         show_sql: true
-        format_sql: true
+
 logging:
   level:
     org:
