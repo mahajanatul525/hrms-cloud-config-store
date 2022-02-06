@@ -1,0 +1,33 @@
+server:
+  port: 8084
+ 
+spring:
+  jpa:
+    generate-ddl: true
+    show-sql: false
+    
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        globally_quoted_identifiers: true
+
+  datasource:
+    url: jdbc:mysql://db-dev-v1-doc.coqvpa6wm9ky.ap-south-1.rds.amazonaws.com:3306/test?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false
+    username: admin
+    password: Matul_525
+    initialization-mode: always
+    driver-class-name: com.mysql.jdbc.Driver
+    platform: org.hibernate.dialect.MySQL8Dialect
+
+security:
+  oauth2:
+    resource:
+      token-info-uri: https://doc-connect-auth-server.herokuapp.com/oauth/check_token
+    client:
+      client-id: mobile
+      client-secret: pin
+    
+  
+
