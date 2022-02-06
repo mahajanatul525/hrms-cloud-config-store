@@ -14,7 +14,7 @@ spring:
         globally_quoted_identifiers: true
 
   datasource:
-    url: jdbc:mysql://db-dev-v1-doc.coqvpa6wm9ky.ap-south-1.rds.amazonaws.com:3306/test?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false
+    url: jdbc:mysql://db-dev-v1-doc.coqvpa6wm9ky.ap-south-1.rds.amazonaws.com:3306/doctors?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false
     username: admin
     password: Matul_525
     initialization-mode: always
